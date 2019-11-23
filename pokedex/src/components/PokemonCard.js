@@ -4,6 +4,8 @@ import { Card, CardContent, CardActions, Collapse, IconButton, Typography, List,
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { makeStyles } from "@material-ui/core/styles";
 
+import PokemonType from "./PokemonType";
+
 const useStyles = makeStyles(theme => ({
     card: {
         display: "flex",
@@ -11,6 +13,11 @@ const useStyles = makeStyles(theme => ({
         alignItems: "flex-start",
         width: 500,
         margin: 20
+    },
+    cardLeft: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center"
     },
     expand: {
         transform: 'rotate(0deg)',
@@ -34,9 +41,10 @@ const PokemonCard = props => {
 
     return (
         <Card className={classes.card}>
-            <CardContent>
+            <CardContent className={classes.cardLeft}>
                 <Typography variant="h6">#{props.id} {props.name}</Typography>
-                <img src={props.src} alt={props.name} />
+                <PokemonType {...props} />
+                <img src={props.src} alt={props.name} />                
             </CardContent>
             <CardContent>        
                 <CardActions>

@@ -42,8 +42,9 @@ const PokemonList = () => {
                         <PokemonCard
                             key={Number(item.id)}
                             id={item.id}
-                            src={images[`${item.id}.png`]}
                             name={item.name}
+                            src={images[`${item.id}.png`]}
+                            types={item.types}
                             obtain={item.obtain}
                         />
                     ))}
