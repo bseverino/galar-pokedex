@@ -17,7 +17,7 @@ function App() {
   const classes = useStyles();
 
   return (
-    <Container className={classes.container} maxWidth>      
+    <Container className={classes.container}>      
       <PokemonList />
     </Container>
   );

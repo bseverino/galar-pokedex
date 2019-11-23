@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import pokemon from "../data/pokemon";
-import PokemonCard from "./PokemonCard";
 import Background from "../img/styling/rotom.png";
+import SearchForm from "./SearchForm";
+import PokemonCard from "./PokemonCard";
 
 const useStyles = makeStyles({
   container: {
@@ -14,6 +15,7 @@ const useStyles = makeStyles({
     backgroundSize: "80%",
     backgroundAttachment: "fixed",
     backgroundPosition: "center top",
+    minHeight: "100vh",
     padding: 20
   },
   header: {
@@ -28,6 +30,33 @@ const useStyles = makeStyles({
 
 const PokemonList = () => {
     const classes = useStyles();
+    const [searchName, setSearchName] = useState("");
+    const [searchType, setSearchType] = useState("");
+    const [searchResults, setSearchResults] = useState([]);
+
+    useEffect(() => {
+        const results = pokemon.filter(item => {
+            if (searchType === ""){
+                return item.name.toLowerCase().includes(searchName.toLowerCase());
+            } else {
+                return item.name.toLowerCase().includes(searchName.toLowerCase()) && item.types.includes(searchType);
+            };
+        });
+        setSearchResults(results);
+    }, [searchName, searchType]);
+
+    const handleName = event => {
+        setSearchName(event.target.value);
+    };
+
+    const handleType = event => {
+        setSearchType(event.target.value);
+    };
+
+    const handleReset = event => {
+        setSearchName("");
+        setSearchType("");
+    };
 
     function importAll(r) {
         let images = {};
@@ -40,14 +69,15 @@ const PokemonList = () => {
     return (
         <Container className={classes.container}>
             <Typography className={classes.header} variant="h2">Galar Pokedex Lite</Typography>
+            <SearchForm searchName={searchName} searchType={searchType} handleName={handleName} handleType={handleType} handleReset={handleReset} />
             <Grid
                 container
                 justify="center"
                 alignItems="flex-start"
             >
-                {pokemon.map(item => (
+                {searchResults.map(item => (
                         <PokemonCard
-                            key={Number(item.id)}
+                            key={item.id}
                             id={item.id}
                             name={item.name}
                             src={images[`${item.id}.png`]}

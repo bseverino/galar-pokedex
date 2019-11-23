@@ -69,7 +69,7 @@ const PokemonCard = props => {
                     Sword? {props.sword === true ? <CheckIcon className={classes.yes} /> : <CloseIcon className={classes.no} />} Shield? {props.shield === true ? <CheckIcon className={classes.yes} /> : <CloseIcon className={classes.no} />}
                 </Typography>
                 <CardActions>                
-                    <Typography variant="p">Methods to obtain</Typography>
+                    <Typography variant="body2">Methods to obtain</Typography>
                     <IconButton
                         className={clsx(classes.expand, {
                             [classes.expandOpen]: expanded,
