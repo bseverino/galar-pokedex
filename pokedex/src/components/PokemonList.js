@@ -4,14 +4,21 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import pokemon from "../data/pokemon";
 import PokemonCard from "./PokemonCard";
+import Background from "../img/styling/rotom.png";
 
 const useStyles = makeStyles({
   container: {
-    background: "gray",
+    backgroundColor: "#E94942",
+    backgroundImage: `url(${Background})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "80%",
+    backgroundAttachment: "fixed",
+    backgroundPosition: "center top",
     padding: 20
   },
   header: {
       color: "white",
+      textShadow: "2px 2px 4px #000",
       fontSize: "3rem",
       fontWeight: "bold",
       textAlign: "center",
