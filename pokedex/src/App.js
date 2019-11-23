@@ -8,7 +8,8 @@ import PokemonList from "./components/PokemonList";
 const useStyles = makeStyles({
   container: {
     display: "flex",
-    justifyContent: "center"
+    justifyContent: "center",
+    background: "white"
   }
 });
 
@@ -16,7 +17,7 @@ function App() {
   const classes = useStyles();
 
   return (
-    <Container className={classes.container}>
+    <Container className={classes.container} maxWidth>      
       <PokemonList />
     </Container>
   );

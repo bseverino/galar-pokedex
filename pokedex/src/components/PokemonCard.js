@@ -1,24 +1,26 @@
 import React from "react";
 import clsx from 'clsx';
-import { Card, CardContent, CardActions, Collapse, IconButton, Typography, List, ListItem, ListItemText } from "@material-ui/core";
+import { Card, CardContent, CardActions, Collapse, IconButton, Typography, List, ListItem, ListItemText, Divider } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
     card: {
-      width: 300,
-      textAlign: "center",
-      margin: 20
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "flex-start",
+        width: 500,
+        margin: 20
     },
     expand: {
-      transform: 'rotate(0deg)',
-      marginLeft: 'auto',
-      transition: theme.transitions.create('transform', {
-        duration: theme.transitions.duration.shortest,
-      }),
+        transform: 'rotate(0deg)',
+        marginLeft: 'auto',
+        transition: theme.transitions.create('transform', {
+            duration: theme.transitions.duration.shortest,
+        }),
     },
     expandOpen: {
-      transform: 'rotate(180deg)',
+        transform: 'rotate(180deg)',
     }
   }));
 
@@ -34,7 +36,9 @@ const PokemonCard = props => {
         <Card className={classes.card}>
             <CardContent>
                 <Typography variant="h6">#{props.id} {props.name}</Typography>
-                <img src={props.src} alt={props.name} />                
+                <img src={props.src} alt={props.name} />
+            </CardContent>
+            <CardContent>        
                 <CardActions>
                     <p>How to obtain?</p>
                     <IconButton
@@ -50,7 +54,14 @@ const PokemonCard = props => {
                 </CardActions>
                 <Collapse in={expanded} timeout="auto" unmountOnExit>
                     <List>
-                        {props.obtain.map((item, index) => <ListItem key={index}><ListItemText primary={item} /></ListItem>)}
+                        {props.obtain.map((item, index) => (
+                            <>
+                            <Divider />
+                            <ListItem key={index}>
+                                <ListItemText primary={item} />                                
+                            </ListItem>                            
+                            </>
+                        ))}
                     </List>
                 </Collapse>
             </CardContent>

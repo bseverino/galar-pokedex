@@ -16,8 +16,8 @@ const pokemon = [
         hiddenAbility: "Grassy Surge",
         ev: [
             {
-                "type": "attack",
-                "amount": 1
+                type: "attack",
+                amount: 1
             }
         ],
         eggGroups: ["field", "grass"],
@@ -44,11 +44,11 @@ const pokemon = [
         hiddenAbility: "Grassy Surge",
         ev: [
             {
-                "type": "attack",
-                "amount": 2
+                type: "attack",
+                amount: 2
             }
         ],
-        "capture-rate": 45,
+        captureRate: 45,
         eggGroups: ["field", "grass"],
         sword: true,
         shield: true,
@@ -73,11 +73,11 @@ const pokemon = [
         hiddenAbility: "Grassy Surge",
         ev: [
             {
-                "type": "attack",
-                "amount": 2
+                type: "attack",
+                amount: 2
             }
         ],
-        "capture-rate": 45,
+        captureRate: 45,
         eggGroups: ["field", "grass"],
         sword: true,
         shield: true,
@@ -102,11 +102,11 @@ const pokemon = [
         hiddenAbility: "Libero",
         ev: [
             {
-                "type": "speed",
-                "amount": 1
+                type: "speed",
+                amount: 1
             }
         ],
-        "capture-rate": 45,
+        captureRate: 45,
         eggGroups: ["field", "human-like"],
         sword: true,
         shield: true,
@@ -131,11 +131,11 @@ const pokemon = [
         hiddenAbility: "Libero",
         ev: [
             {
-                "type": "speed",
-                "amount": 2
+                type: "speed",
+                amount: 2
             }
         ],
-        "capture-rate": 45,
+        captureRate: 45,
         eggGroups: ["field", "human-like"],
         sword: true,
         shield: true,
@@ -160,11 +160,11 @@ const pokemon = [
         hiddenAbility: "Libero",
         ev: [
             {
-                "type": "speed",
-                "amount": 3
+                type: "speed",
+                amount: 3
             }
         ],
-        "capture-rate": 45,
+        captureRate: 45,
         eggGroups: ["field", "human-like"],
         sword: true,
         shield: true,
@@ -189,15 +189,15 @@ const pokemon = [
         hiddenAbility: "Sniper",
         ev: [
             {
-                "type": "speed",
-                "amount": 1
+                type: "speed",
+                amount: 1
             },
             {
-                "type": "sp. defense",
-                "amount": 1
+                type: "sp. defense",
+                amount: 1
             }
         ],
-        "capture-rate": 45,
+        captureRate: 45,
         eggGroups: ["water 1", "field"],
         sword: true,
         shield: true,
@@ -222,11 +222,11 @@ const pokemon = [
         hiddenAbility: "Sniper",
         ev: [
             {
-                "type": "sp. attack",
-                "amount": 2
+                type: "sp. attack",
+                amount: 2
             }
         ],
-        "capture-rate": 45,
+        captureRate: 45,
         eggGroups: ["water 1", "field"],
         sword: true,
         shield: true,
@@ -251,11 +251,11 @@ const pokemon = [
         hiddenAbility: "Sniper",
         ev: [
             {
-                "type": "speed",
-                "amount": 3
+                type: "speed",
+                amount: 3
             }
         ],
-        "capture-rate": 45,
+        captureRate: 45,
         eggGroups: ["water 1", "field"],
         sword: true,
         shield: true,
@@ -280,11 +280,11 @@ const pokemon = [
         hiddenAbility: "Telepathy",
         ev: [
             {
-                "type": "sp. defense",
-                "amount": 1
+                type: "sp. defense",
+                amount: 1
             }
         ],
-        "capture-rate": 255,
+        captureRate: 255,
         eggGroups: ["bug"],
         sword: true,
         shield: true,
@@ -309,11 +309,11 @@ const pokemon = [
         hiddenAbility: "Telepathy",
         ev: [
             {
-                "type": "sp. defense",
-                "amount": 2
+                type: "sp. defense",
+                amount: 2
             }
         ],
-        "capture-rate": 120,
+        captureRate: 120,
         eggGroups: ["bug"],
         sword: true,
         shield: true,
@@ -338,11 +338,11 @@ const pokemon = [
         hiddenAbility: "Telepathy",
         ev: [
             {
-                "type": "sp. defense",
-                "amount": 3
+                type: "sp. defense",
+                amount: 3
             }
         ],
-        "capture-rate": 45,
+        captureRate: 45,
         eggGroups: ["bug"],
         sword: true,
         shield: true,
@@ -367,11 +367,11 @@ const pokemon = [
         hiddenAbility: "Run Away",
         ev: [
             {
-                "type": "hp",
-                "amount": 1
+                type: "hp",
+                amount: 1
             }
         ],
-        "capture-rate": 255,
+        captureRate: 255,
         eggGroups: ["bug"],
         sword: true,
         shield: true,
@@ -396,11 +396,11 @@ const pokemon = [
         hiddenAbility: null,
         ev: [
             {
-                "type": "defense",
-                "amount": 2
+                type: "defense",
+                amount: 2
             }
         ],
-        "capture-rate": 120,
+        captureRate: 120,
         eggGroups: ["bug"],
         sword: true,
         shield: true,
@@ -425,15 +425,15 @@ const pokemon = [
         hiddenAbility: "Tinted Lens",
         ev: [
             {
-                "type": "sp. attack",
-                "amount": 2
+                type: "sp. attack",
+                amount: 2
             },
             {
-                "type": "sp. defense",
-                "amount": 1
+                type: "sp. defense",
+                amount: 1
             }
         ],
-        "capture-rate": 45,
+        captureRate: 45,
         eggGroups: ["bug"],
         sword: true,
         shield: true,
@@ -458,11 +458,11 @@ const pokemon = [
         hiddenAbility: null,
         ev: [
             {
-                "type": "attack",
-                "amount": 1
+                type: "attack",
+                amount: 1
             }
         ],
-        "capture-rate": 255,
+        captureRate: 255,
         eggGroups: ["bug"],
         sword: true,
         shield: true,
@@ -487,11 +487,11 @@ const pokemon = [
         hiddenAbility: null,
         ev: [
             {
-                "type": "defense",
-                "amount": 2
+                type: "defense",
+                amount: 2
             }
         ],
-        "capture-rate": 120,        
+        captureRate: 120,        
         eggGroups: ["bug"],
         sword: true,
         shield: true,
@@ -516,11 +516,11 @@ const pokemon = [
         hiddenAbility: null,
         ev: [
             {
-                "type": "sp. attack",
-                "amount": 3
+                type: "sp. attack",
+                amount: 3
             }
         ],
-        "capture-rate": 45,
+        captureRate: 45,
         eggGroups: ["bug"],
         sword: true,
         shield: true,
@@ -545,11 +545,11 @@ const pokemon = [
         hiddenAbility: "Tinted Lens",
         ev: [
             {
-                "type": "hp",
-                "amount": 1
+                type: "hp",
+                amount: 1
             }
         ],
-        "capture-rate": 255,
+        captureRate: 255,
         eggGroups: ["flying"],
         sword: true,
         shield: true,
@@ -574,17 +574,46 @@ const pokemon = [
         hiddenAbility: "Tinted Lens",
         ev: [
             {
-                "type": "hp",
-                "amount": 2
+                type: "hp",
+                amount: 2
             }
         ],
-        "capture-rate": 90,
+        captureRate: 90,
         eggGroups: ["flying"],
         sword: true,
         shield: true,
         obtain: ["Evolve Hoothoot at level 20", "Bridge Field", "Giant's Cap", "Motostoke Outskirts", "Motostoke Riverbank", "East Lake Axewell (Raid)", "Giant's Cap (Raid)", "Hammerlocke Hills (Raid)", "Rolling Fields (Raid)"],
-        swordFlavor: "It always stands on one foot. It changes feet so fast, the movement can rarely be seen.",
-        shieldFlavor: "It begins to hoot at the same time every day. Some Trainers use them in place of clocks."
+        swordFlavor: "Its eyes are specially developed to enable it to see clearly even in murky darkness and minimal light.",
+        shieldFlavor: "When it needs to think, it rotates its head 180 degrees to sharpen its intellectual power."
+    },
+    {
+        id: "021",
+        nationalId: "821",
+        name: "Rookidee",
+        img: "../img/021.png",
+        gender: {
+            male: 50.2,
+            female: 49.8
+        },
+        types: ["flying"],
+        classification: "Tiny Bird",
+        height: 1.2,
+        weight: 1.8,
+        abilities: ["Keen Eye", "Unnerve"],
+        hiddenAbility: "Big Pecks",
+        ev: [
+            {
+                type: "speed",
+                amount: 1
+            }
+        ],
+        captureRate: 255,
+        eggGroups: ["flying"],
+        sword: true,
+        shield: true,
+        obtain: ["Route 1", "Route 2", "Route 3", "Motostoke Riverbank", "Slumbering Weald", "East Lake Axewell (Raid)", "Giant's Cap (Raid)", "Hammerlocke Hills (Raid)"],
+        swordFlavor: "It will bravely challenge any opponent, no matter how powerful. This Pokémon benefits from every battle; even a defeat increases its strength a bit.",
+        shieldFlavor: "Jumping nimbly about, this small-bodied Pokémon takes advantage of even the slightest opportunity to disorient larger opponents."
     }
 ];
 
