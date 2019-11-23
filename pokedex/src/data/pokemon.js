@@ -341,74 +341,232 @@ const pokemon = [
     },
     {
         "id": 13,
+        "national-id": 10,
         "name": "Caterpie",
+        "gender": {
+            "male": 50.2,
+            "female": 49.8
+        },
         "types": ["bug"],
+        "classification": "Worm",
+        "height": 0.3,
+        "weight": 2.9,
+        "abilities": ["Shield Dust"],
+        "hidden-ability": "Run Away",
+        "ev": [
+            {
+                "type": "hp",
+                "amount": 1
+            }
+        ],
+        "capture-rate": 255,
         "egg-groups": ["bug"],
         "sword": true,
         "shield": true,
-        "obtain": ["Route 1", "Bridge Field (Raid)", "Dappled Grove (Raid)", "Rolling Fields (Raid)", "South Lake Miloch (Raid)"]
+        "obtain": ["Route 1", "Bridge Field (Raid)", "Dappled Grove (Raid)", "Rolling Fields (Raid)", "South Lake Miloch (Raid)"],
+        "sword-flavor": "For protection, it releases a horrible stench from the antenna on its head to drive away enemies.",
+        "shield-flavor": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls."
     },
     {
         "id": 14,
+        "national-id": 11,
         "name": "Metapod",
+        "gender": {
+            "male": 50.2,
+            "female": 49.8
+        },
         "types": ["bug"],
+        "classification": "Cocoon",
+        "height": 0.7,
+        "weight": 9.9,
+        "abilities": ["Shed Skin"],
+        "hidden-ability": null,
+        "ev": [
+            {
+                "type": "defense",
+                "amount": 2
+            }
+        ],
+        "capture-rate": 120,
         "egg-groups": ["bug"],
         "sword": true,
         "shield": true,
-        "obtain": ["Evolve Caterpie at level 7", "Rollings Fields", "Bridge Field (Raid)", "Dappled Grove (Raid)", "Rolling Fields (Raid)", "South Lake Miloch (Raid)"]
+        "obtain": ["Evolve Caterpie at level 7", "Rollings Fields", "Bridge Field (Raid)", "Dappled Grove (Raid)", "Rolling Fields (Raid)", "South Lake Miloch (Raid)"],
+        "sword-flavor": "It is waiting for the moment to evolve. At this stage, it can only harden, so it remains motionless to avoid attack.",
+        "shield-flavor": "Even though it is encased in a sturdy shell, the body inside is tender. It can't withstand a harsh attack."
     },
     {
         "id": 15,
+        "national-id": 12,
         "name": "Butterfree",
+        "gender": {
+            "male": 50.2,
+            "female": 49.8
+        },
+        "national-id": 12,
         "types": ["bug", "flying"],
+        "classification": "Butterfly",
+        "height": 1.1,
+        "weight": 32,
+        "abilities": ["Compoundeyes"],
+        "hidden-ability": "Tinted Lens",
+        "ev": [
+            {
+                "type": "sp. attack",
+                "amount": 2
+            },
+            {
+                "type": "sp. defense",
+                "amount": 1
+            }
+        ],
+        "capture-rate": 45,
         "egg-groups": ["bug"],
         "sword": true,
         "shield": true,
-        "obtain": ["Evolve Metapod at level 10", "East Lake Axewell", "Rollings Fields", "Slumbering Weald", "Bridge Field (Raid)", "Dappled Grove (Raid)", "East Lake Axewell (Raid)", "Giant's Cap (Raid)", "Hammerlocke Hills (Raid)", "Rolling Fields (Raid)", "South Lake Miloch (Raid)", "Rolling Fields (Gigantamax)"]
+        "obtain": ["Evolve Metapod at level 10", "East Lake Axewell", "Rollings Fields", "Slumbering Weald", "Bridge Field (Raid)", "Dappled Grove (Raid)", "East Lake Axewell (Raid)", "Giant's Cap (Raid)", "Hammerlocke Hills (Raid)", "Rolling Fields (Raid)", "South Lake Miloch (Raid)", "Rolling Fields (Gigantamax)"],
+        "sword-flavor": "In battle, it flaps its wings at great speed to release highly toxic dust into the air.",
+        "shield-flavor": "It collects honey every day. It rubs honey onto the hairs on its legs to carry it back to its nest."
     },
     {
         "id": 16,
+        "national-id": 736,
         "name": "Grubbin",
+        "gender": {
+            "male": 50.2,
+            "female": 49.8
+        },
         "types": ["bug"],
+        "classification": "Larva",
+        "height": 0.4,
+        "weight": 4.4,
+        "abilities": ["Swarm"],
+        "hidden-ability": null,
+        "ev": [
+            {
+                "type": "attack",
+                "amount": 1
+            }
+        ],
+        "capture-rate": 255,
         "egg-groups": ["bug"],
         "sword": true,
         "shield": true,
-        "obtain": ["Route 1", "Dappled Grove", "East Lake Axewell", "North Lake Miloch", "Slumbering Weald", "Watchtower Ruins", "Bridge Field (Raid)", "Dappled Grove (Raid)", "Rolling Fields (Raid)"]
+        "obtain": ["Route 1", "Dappled Grove", "East Lake Axewell", "North Lake Miloch", "Slumbering Weald", "Watchtower Ruins", "Bridge Field (Raid)", "Dappled Grove (Raid)", "Rolling Fields (Raid)"],
+        "sword-flavor": "Its natural enemies, like Rookidee, may flee rather than risk getting caught in its large mandibles that can snap thick tree branches.",
+        "shield-flavor": "It uses its big jaws to dig nests into the forest floor, and it loves to feed on sweet tree sap."
     },
     {
         "id": 17,
+        "national-id": 737,
         "name": "Charjabug",
+        "gender": {
+            "male": 50.2,
+            "female": 49.8
+        },
+        "types": ["bug"],
+        "classification": "Battery",
+        "height": 0.5,
+        "weight": 10.5,
+        "abilities": ["Battery"],
+        "hidden-ability": null,
+        "ev": [
+            {
+                "type": "defense",
+                "amount": 2
+            }
+        ],
+        "capture-rate": 120,
         "types": ["bug", "electric"],
         "egg-groups": ["bug"],
         "sword": true,
         "shield": true,
-        "obtain": ["Evolve Grubbin at level 20", "Axew's Eye", "Dusty Bowl", "Hammerlocke Hills", "Bridge Field (Raid)", "Dappled Grove (Raid)", "Giant's Cap (Raid)", "Motostoke Riverbank (Raid)", "Rolling Fields (Raid)"]
+        "obtain": ["Evolve Grubbin at level 20", "Axew's Eye", "Dusty Bowl", "Hammerlocke Hills", "Bridge Field (Raid)", "Dappled Grove (Raid)", "Giant's Cap (Raid)", "Motostoke Riverbank (Raid)", "Rolling Fields (Raid)"],
+        "sword-flavor": "While its durable shell protects it from attacks, Charjabug strikes at enemies with jolts of electricity discharged from the tips of its jaws.",
+        "shield-flavor": "Its digestive processes convert the leaves it eats into electricity. An electric sac in its belly stores the electricity for later use."
     },
     {
         "id": 18,
+        "national-id": 738,
         "name": "Vikavolt",
+        "gender": {
+            "male": 50.2,
+            "female": 49.8
+        },
         "types": ["bug", "electric"],
+        "classification": "Stag Beetle",
+        "height": 1.5,
+        "weight": 45,
+        "abilities": ["Levitate"],
+        "hidden-ability": null,
+        "ev": [
+            {
+                "type": "sp. attack",
+                "amount": 3
+            }
+        ],
+        "capture-rate": 45,
         "egg-groups": ["bug"],
         "sword": true,
         "shield": true,
-        "obtain": ["Evolve Charjabug with Thunder Stone", "Giant's Mirror", "Giant's Seat", "Bridge Field (Raid)", "Dappled Grove (Raid)", "Giant's Cap (Raid)", "Giant's Mirror (Raid)", "Motostoke Riverbank (Raid)", "Rolling Fields (Raid)"]
+        "obtain": ["Evolve Charjabug with Thunder Stone", "Giant's Mirror", "Giant's Seat", "Bridge Field (Raid)", "Dappled Grove (Raid)", "Giant's Cap (Raid)", "Giant's Mirror (Raid)", "Motostoke Riverbank (Raid)", "Rolling Fields (Raid)"],
+        "sword-flavor": "It builds up electricity in its abdomen, focuses it through its jaws, and then fires the electricity off in concentrated beams.",
+        "shield-flavor": "If it carries a Charjabug to use as a spare battery, a flying Vikavolt can rapidly fire high-powered beams of electricity."
     },
     {
         "id": 19,
+        "national-id": 163,
         "name": "Hoothoot",
+        "gender": {
+            "male": 50.2,
+            "female": 49.8
+        },
         "types": ["normal", "flying"],
+        "classification": "Owl",
+        "height": 0.7,
+        "weight": 21.2,
+        "abilities": ["Insomnia", "Keen Eye"],
+        "hidden-ability": "Tinted Lens",
+        "ev": [
+            {
+                "type": "hp",
+                "amount": 1
+            }
+        ],
+        "capture-rate": 255,
         "egg-groups": ["flying"],
         "sword": true,
         "shield": true,
-        "obtain": ["Route 1", "Route 2", "Dappled Grove", "Giant's Cap", "Slumbering Weald", "East Lake Axewell (Raid)", "Giant's Cap (Raid)", "Hammerlocke Hills (Raid)", "Rolling Fields (Raid)"]
+        "obtain": ["Route 1", "Route 2", "Dappled Grove", "Giant's Cap", "Slumbering Weald", "East Lake Axewell (Raid)", "Giant's Cap (Raid)", "Hammerlocke Hills (Raid)", "Rolling Fields (Raid)"],
+        "sword-flavor": "It always stands on one foot. It changes feet so fast, the movement can rarely be seen.",
+        "shield-flavor": "It begins to hoot at the same time every day. Some Trainers use them in place of clocks."
     },
     {
         "id": 20,
+        "national-id": 164,
         "name": "Noctowl",
+        "gender": {
+            "male": 50.2,
+            "female": 49.8
+        },
         "types": ["normal", "flying"],
+        "classification": "Owl",
+        "height": 1.6,
+        "weight": 40.8,
+        "abilities": ["Insomnia", "Keen Eye"],
+        "hidden-ability": "Tinted Lens",
+        "ev": [
+            {
+                "type": "hp",
+                "amount": 2
+            }
+        ],
+        "capture-rate": 90,
         "egg-groups": ["flying"],
         "sword": true,
         "shield": true,
-        "obtain": ["Evolve Hoothoot at level 20", "Bridge Field", "Giant's Cap", "Motostoke Outskirts", "Motostoke Riverbank", "East Lake Axewell (Raid)", "Giant's Cap (Raid)", "Hammerlocke Hills (Raid)", "Rolling Fields (Raid)"]
+        "obtain": ["Evolve Hoothoot at level 20", "Bridge Field", "Giant's Cap", "Motostoke Outskirts", "Motostoke Riverbank", "East Lake Axewell (Raid)", "Giant's Cap (Raid)", "Hammerlocke Hills (Raid)", "Rolling Fields (Raid)"],
+        "sword-flavor": "It always stands on one foot. It changes feet so fast, the movement can rarely be seen.",
+        "shield-flavor": "It begins to hoot at the same time every day. Some Trainers use them in place of clocks."
     }
 ];
