@@ -36,7 +36,7 @@ const PokemonList = () => {
             <Grid
                 container
                 justify="center"
-                alignItems="stretch"
+                alignItems="flex-start"
             >
                 {pokemon.map(item => (
                         <PokemonCard
@@ -45,6 +45,9 @@ const PokemonList = () => {
                             name={item.name}
                             src={images[`${item.id}.png`]}
                             types={item.types}
+                            classification={item.classification}
+                            sword={item.sword}
+                            shield={item.shield}
                             obtain={item.obtain}
                         />
                     ))}

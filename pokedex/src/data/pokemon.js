@@ -597,7 +597,7 @@ const pokemon = [
         },
         types: ["flying"],
         classification: "Tiny Bird",
-        height: 1.2,
+        height: 0.2,
         weight: 1.8,
         abilities: ["Keen Eye", "Unnerve"],
         hiddenAbility: "Big Pecks",
@@ -614,6 +614,209 @@ const pokemon = [
         obtain: ["Route 1", "Route 2", "Route 3", "Motostoke Riverbank", "Slumbering Weald", "East Lake Axewell (Raid)", "Giant's Cap (Raid)", "Hammerlocke Hills (Raid)"],
         swordFlavor: "It will bravely challenge any opponent, no matter how powerful. This Pokémon benefits from every battle; even a defeat increases its strength a bit.",
         shieldFlavor: "Jumping nimbly about, this small-bodied Pokémon takes advantage of even the slightest opportunity to disorient larger opponents."
+    },
+    {
+        id: "022",
+        nationalId: "822",
+        name: "Corvisquire",
+        img: "../img/022.png",
+        gender: {
+            male: 50.2,
+            female: 49.8
+        },
+        types: ["flying"],
+        classification: "Raven",
+        height: 0.8,
+        weight: 16,
+        abilities: ["Keen Eye", "Unnerve"],
+        hiddenAbility: "Big Pecks",
+        ev: [
+            {
+                type: "speed",
+                amount: 2
+            }
+        ],
+        captureRate: 120,
+        eggGroups: ["flying"],
+        sword: true,
+        shield: true,
+        obtain: ["Evolve Rookidee at level 18", "Route 3", "Hammerlocke Hills", "Motostoke Riverbank", "East Lake Axewell (Raid)", "Giant's Cap (Raid)", "Hammerlocke Hills (Raid)"],
+        swordFlavor: "Smart enough to use tools in battle, these Pokémon have been seen picking up rocks and flinging them or using ropes to wrap up enemies.",
+        shieldFlavor: "The lessons of many harsh battles have taught it how to accurately judge an opponent's strength."
+    },
+    {
+        id: "023",
+        nationalId: "823",
+        name: "Corviknight",
+        img: "../img/023.png",
+        gender: {
+            male: 50.2,
+            female: 49.8
+        },
+        types: ["flying", "steel"],
+        classification: "Raven",
+        height: 2.2,
+        weight: 75,
+        abilities: ["Pressure", "Unnerve"],
+        hiddenAbility: "Mirror Armor",
+        ev: [
+            {
+                type: "defense",
+                amount: 3
+            }
+        ],
+        captureRate: 45,
+        eggGroups: ["flying"],
+        sword: true,
+        shield: true,
+        obtain: ["Evolve Corvisquire at level 38", "Route 7", "Dusty Bowl", "Giant's Cap", "Hammerlocke Hills", "Lake of Outrage", "Motostoke Riverbank", "North Lake Miloch", "Slumbering Weald", "Watchtower Ruins", "East Lake Axewell (Raid)", "Giant's Cap (Raid)", "Hammerlocke Hills (Raid)", "Giant's Cap (Gigantamax)"],
+        swordFlavor: "This Pokémon reigns supreme in the skies of the Galar region. The black luster of its steel body could drive terror into the heart of any foe.",
+        shieldFlavor: "With their great intellect and flying skills, these Pokémon very successfully act as the Galar region's airborne taxi service."
+    },
+    {
+        id: "024",
+        nationalId: "819",
+        name: "Skwovet",
+        img: "../img/024.png",
+        gender: {
+            male: 50.2,
+            female: 49.8
+        },
+        types: ["normal"],
+        classification: "Cheeky",
+        height: 0.3,
+        weight: 2.5,
+        abilities: ["Cheek Pouch"],
+        hiddenAbility: "Gluttony",
+        ev: [
+            {
+                type: "hp",
+                amount: 1
+            }
+        ],
+        captureRate: 255,
+        eggGroups: ["field"],
+        sword: true,
+        shield: true,
+        obtain: ["Route 1", "Route 2", "Route 3", "Route 4", "Route 5", "Dappled Grove", "Motostoke Riverbank", "North Lake Miloch", "Rolling Fields", "Slumbering Weald", "Watchtower Ruins", "Bridge Field (Raid)", "East Lake Axewell (Raid)", "Motostoke Riverbank (Raid)", "Rolling Fields (Raid)", "Stony Wilderness (Raid)"],
+        swordFlavor: "Found throughout the Galar region, this Pokémon becomes uneasy if its cheeks are ever completely empty of berries.",
+        shieldFlavor: "It eats berries nonstop; a habit that has made it more resilient than it looks. It'll show up on farms, searching for yet more berries."
+    },
+    {
+        id: "025",
+        nationalId: "820",
+        name: "Greedent",
+        img: "../img/025.png",
+        gender: {
+            male: 50.2,
+            female: 49.8
+        },
+        types: ["normal"],
+        classification: "Greedy",
+        height: 0.6,
+        weight: 6,
+        abilities: ["Cheek Pouch"],
+        hiddenAbility: "Gluttony",
+        ev: [
+            {
+                type: "hp",
+                amount: 2
+            }
+        ],
+        captureRate: 90,
+        eggGroups: ["field"],
+        sword: true,
+        shield: true,
+        obtain: ["Evolve Skwovet at level 24", "Route 6", "Route 7", "Route 9", "Axew's Eye", "Bridge Field", "Giant's Cap", "Giant's Mirror", "Giant's Seat", "Hammerlocke Hills", "Lake of Outrage", "Motostoke Riverbank", "Bridge Field (Raid)", "Motostoke Riverbank (Raid)", "Stony Wilderness (Raid)"],
+        swordFlavor: "It stashes berries in its tail; so many berries that they fall out constantly. But this Pokémon is a bit slow-witted, so it doesn't notice the loss.",
+        shieldFlavor: "Common throughout the Galar region, this Pokémon has strong teeth and can chew through the toughest of berry shells."
+    },
+    {
+        id: "026",
+        nationalId: "519",
+        name: "Pidove",
+        img: "../img/026.png",
+        gender: {
+            male: 50.2,
+            female: 49.8
+        },
+        types: ["normal", "flying"],
+        classification: "Tiny Pigeon",
+        height: 0.6,
+        weight: 6,
+        abilities: ["Big Pecks", "Super Luck"],
+        hiddenAbility: "Rivalry",
+        ev: [
+            {
+                type: "attack",
+                amount: 1
+            }
+        ],
+        captureRate: 255,
+        eggGroups: ["flying"],
+        sword: true,
+        shield: true,
+        obtain: ["East Lake Axewell", "North Lake Miloch", "Rolling Fields", "Watchtower Ruins", "Bridge Field (Raid)", "East Lake Axewell (Raid)", "Motostoke Riverbank (Raid)", "Rolling Fields (Raid)"],
+        swordFlavor: "Where people go, these Pokémon follow. If you're scattering food for them, be carefulâ€” several hundred of them can gather at once.",
+        shieldFlavor: "It's forgetful and not very bright, but many Trainers love it anyway for its friendliness and sincerity."
+    },
+    {
+        id: "027",
+        nationalId: "520",
+        name: "Tranquill",
+        img: "../img/027.png",
+        gender: {
+            male: 50.2,
+            female: 49.8
+        },
+        types: ["normal", "flying"],
+        classification: "Wild Pigeon",
+        height: 0.6,
+        weight: 15,
+        abilities: ["Big Pecks", "Super Luck"],
+        hiddenAbility: "Rivalry",
+        ev: [
+            {
+                type: "attack",
+                amount: 2
+            }
+        ],
+        captureRate: 120,
+        eggGroups: ["flying"],
+        sword: true,
+        shield: true,
+        obtain: ["Evolve Pidove at level 21", "Bridge Field", "Giant's Mirror", "Giant's Seat", "Stony Wilderness", "Bridge Field (Raid)", "East Lake Axewell (Raid)", "Motostoke Riverbank (Raid)", "Rolling Fields (Raid)"],
+        swordFlavor: "It can fly moderately quickly. No matter how far it travels, it can always find its way back to its master and its nest.",
+        shieldFlavor: "These bright Pokémon have acute memories. Apparently delivery workers often choose them as their partners."
+    },
+    {
+        id: "028",
+        nationalId: "521",
+        name: "Unfezant",
+        img: "../img/028.png",
+        gender: {
+            male: 50.2,
+            female: 49.8
+        },
+        types: ["normal", "flying"],
+        classification: "Proud",
+        height: 1.2,
+        weight: 29,
+        abilities: ["Big Pecks", "Super Luck"],
+        hiddenAbility: "Rivalry",
+        ev: [
+            {
+                type: "attack",
+                amount: 3
+            }
+        ],
+        captureRate: 45,
+        eggGroups: ["flying"],
+        sword: true,
+        shield: true,
+        obtain: ["Evolve Tranquill at level 32", "Axew's Eye", "Giant's Mirror", "Hammerlocke Hills", "Stony Wilderness", "Bridge Field (Raid)", "East Lake Axewell (Raid)", "Motostoke Riverbank (Raid)", "Rolling Fields (Raid)"],
+        swordFlavor: "Unfezant are exceptional fliers. The females are known for their stamina, while the males outclass them in terms of speed.",
+        shieldFlavor: "This Pokémon is intelligent and intensely proud. People will sit up and take notice if you become the Trainer of one."
     }
 ];
 

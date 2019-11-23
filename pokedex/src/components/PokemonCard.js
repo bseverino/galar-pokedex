@@ -2,6 +2,8 @@ import React from "react";
 import clsx from 'clsx';
 import { Card, CardContent, CardActions, Collapse, IconButton, Typography, List, ListItem, ListItemText, Divider } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import CheckIcon from "@material-ui/icons/Check";
+import CloseIcon from "@material-ui/icons/Close";
 import { makeStyles } from "@material-ui/core/styles";
 
 import PokemonType from "./PokemonType";
@@ -17,7 +19,10 @@ const useStyles = makeStyles(theme => ({
     cardLeft: {
         display: "flex",
         flexDirection: "column",
-        alignItems: "center"
+        alignItems: "center",
+        justifyContent: "flex-start",
+        width: 160,
+        marginTop: -5
     },
     expand: {
         transform: 'rotate(0deg)',
@@ -28,6 +33,18 @@ const useStyles = makeStyles(theme => ({
     },
     expandOpen: {
         transform: 'rotate(180deg)',
+    },
+    version: {
+        display: "flex",
+        alignItems: "flex-end"
+    },
+    yes: {
+        color: "green",
+        margin: "0 10px 0 5px"
+    },
+    no: {
+        color: "red",
+        margin: "0 10px 0 5px"
     }
   }));
 
@@ -46,9 +63,13 @@ const PokemonCard = props => {
                 <PokemonType {...props} />
                 <img src={props.src} alt={props.name} />                
             </CardContent>
-            <CardContent>        
-                <CardActions>
-                    <p>How to obtain?</p>
+            <CardContent>
+                <Typography variant="button">The {props.classification} Pokemon</Typography>
+                <Typography className={classes.version} variant="subtitle2">
+                    Sword? {props.sword === true ? <CheckIcon className={classes.yes} /> : <CloseIcon className={classes.no} />} Shield? {props.shield === true ? <CheckIcon className={classes.yes} /> : <CloseIcon className={classes.no} />}
+                </Typography>
+                <CardActions>                
+                    <Typography variant="p">Methods to obtain</Typography>
                     <IconButton
                         className={clsx(classes.expand, {
                             [classes.expandOpen]: expanded,
