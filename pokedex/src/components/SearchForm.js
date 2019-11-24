@@ -83,7 +83,8 @@ const useStyles = makeStyles({
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        marginBottom: 20
     },
     menu: {
         width: 200,

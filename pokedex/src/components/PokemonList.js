@@ -68,7 +68,7 @@ const PokemonList = () => {
 
     return (
         <Container className={classes.container}>
-            <Typography className={classes.header} variant="h2">Galar Pokedex Lite</Typography>
+            <Typography className={classes.header} variant="h2">Galar Pokédex Lite</Typography>
             <SearchForm searchName={searchName} searchType={searchType} handleName={handleName} handleType={handleType} handleReset={handleReset} />
             <Grid
                 container

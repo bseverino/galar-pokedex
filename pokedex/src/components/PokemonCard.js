@@ -64,7 +64,7 @@ const PokemonCard = props => {
                 <img src={props.src} alt={props.name} />                
             </CardContent>
             <CardContent>
-                <Typography variant="button">The {props.classification} Pokemon</Typography>
+                <Typography variant="button">The {props.classification} Pokémon</Typography>
                 <Typography className={classes.version} variant="subtitle2">
                     Sword? {props.sword === true ? <CheckIcon className={classes.yes} /> : <CloseIcon className={classes.no} />} Shield? {props.shield === true ? <CheckIcon className={classes.yes} /> : <CloseIcon className={classes.no} />}
                 </Typography>
